@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    border: 10px solid rgba(255, 165, 0, 1); 
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    height: 600px;
+    width: 800px;
+    background-color: white;
+}
+
+.title-box {
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 165, 0));
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.game-area {
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: url('image1.jpg');
+    background-size: cover;
+    transition: background-image 0.5s;
+}
+
+#start-button, #restart-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.dialog-box {
+    position: absolute;
+    bottom: 60px; /* 设置距离底部的高度 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* 让独白框的宽度适应屏幕 */
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明背景 */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    display: none; /* 默认隐藏独白框 */
+}
